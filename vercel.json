@@ -1,5 +1,4 @@
 {
-  "verison": 2,
   "build": [
     {
       "src": "./src/server.ts",
