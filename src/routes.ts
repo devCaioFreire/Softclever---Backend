@@ -22,12 +22,11 @@ router.post(
   new CreateTaskController().handle
 );
 router.get("/tasks", isAuthenticated, new GetTaskController().handle);
-
 router.delete(
   "/tasks:taskID",
   isAuthenticated,
   new DeleteTaskController().handle
 );
-router.put("/tasks/:taskID", isAuthenticated, new PutTaskController().handle);
+router.put("/tasks:taskID", isAuthenticated, new PutTaskController().handle);
 
 export { router };
